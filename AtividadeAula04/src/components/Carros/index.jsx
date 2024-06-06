@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Dropdown, Row, Col, ListGroup } from 'react-bootstrap';
-
+import './style.css';
 const Carros = () => {
   const carros = [
     { id: 1, marca: 'Toyota', modelo: 'Corolla' },
@@ -27,7 +27,7 @@ const Carros = () => {
       <Row className="mb-3">
         <Col>
           <Dropdown onSelect={handleBusca}>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
+            <Dropdown.Toggle variant="custom" id="dropdown-basic">
               {marcaEscolhida || 'Selecione a marca'}
             </Dropdown.Toggle>
             <Dropdown.Menu>
