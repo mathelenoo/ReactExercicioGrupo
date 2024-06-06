@@ -28,12 +28,12 @@ const Carros = () => {
       <Row className="mb-3">
         <Col>
           <Dropdown onSelect={handleBusca}>
-            <Dropdown.Toggle variant="custom" id="dropdown-basic">
+            <Dropdown.Toggle variant="custom" id="dropdown-basic" className="btn-custom">
               {marcaEscolhida || 'Selecione a marca'}
             </Dropdown.Toggle>
-            <Dropdown.Menu>
+            <Dropdown.Menu className="dropdown-menu">
               {marcas.map((marca, index) => (
-                <Dropdown.Item key={index} eventKey={marca}>
+                <Dropdown.Item key={index} eventKey={marca} className="dropdown-item">
                   {marca}
                 </Dropdown.Item>
               ))}
@@ -45,7 +45,7 @@ const Carros = () => {
         <Col>
           <ListGroup>
             {carrosFiltrados.map((carro) => (
-              <ListGroup.Item key={carro.id}>
+              <ListGroup.Item key={carro.id} className="list-group-item">
                 {carro.marca} - {carro.modelo}
               </ListGroup.Item>
             ))}
