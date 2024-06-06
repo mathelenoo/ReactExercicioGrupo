@@ -1,7 +1,6 @@
 
 /* Estilos para o fundo da tela */
 body {
-    background: linear-gradient(to bottom, #747474, #ebebeb); /* Degradê de cinza */
     margin: 0; /* Remove margens padrão do corpo */
     height: 100vh; /* Define altura total da tela */
     width: auto;
