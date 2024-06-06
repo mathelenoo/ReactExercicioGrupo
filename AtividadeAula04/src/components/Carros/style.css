@@ -9,13 +9,15 @@ body {
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
   }
-  
+  .container{
+    padding-bottom: 30rem;
+  }
   .btn-custom{
       color: whitesmoke;
       background-color: #3b3b3b;
       font-size: 1.5rem;
       height: 4rem;
-      width: 100%;
+      width: 20rem;
       --bs-btn-hover-border-color: #3b3b3b;
   }
   
