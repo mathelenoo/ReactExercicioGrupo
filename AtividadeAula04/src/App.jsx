@@ -1,12 +1,15 @@
 import React from 'react'
-import Formulario from './components/Formulario'
+// import Formulario from './components/Formulario'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Carros from './components/Carros';
 
 
 function App() {
   return (
-    
-    <Formulario/>
+    <div>
+    {/* <Formulario/> */}
+    <Carros/>
+    </div>
   )
 }
 
