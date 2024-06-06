@@ -1,0 +1,33 @@
+
+/* Estilos para o fundo da tela */
+body {
+    background: linear-gradient(to bottom, #747474, #ebebeb); /* Degradê de cinza */
+    margin: 0; /* Remove margens padrão do corpo */
+    height: 100vh; /* Define altura total da tela */
+    width: auto;
+    display: flex; /* Usa flexbox para centralizar verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+  }
+  
+  .btn-custom{
+      color: whitesmoke;
+      background-color: #3b3b3b;
+      font-size: 1.5rem;
+      height: 4rem;
+      width: 100%;
+      --bs-btn-hover-border-color: #3b3b3b;
+  }
+  
+  .dropdown-menu{
+      width: 100%;
+      font-size: 1.2rem;
+  }
+  
+  a.dropdown-item{
+      padding-block: 0.5rem;
+  }
+  
+  .list-group-item{
+      text-align: center;
+  }
