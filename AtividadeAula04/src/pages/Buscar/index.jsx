@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import './styles.css';
 
 function BuscarUsuario() {
   const [id, setId] = useState("");
@@ -11,7 +12,7 @@ function BuscarUsuario() {
   const fetchPessoas = async () => {
     try {
       const response = await axios.get(
-        "https://665fa7175425580055b05c1e.mockapi.io/pessoas" //Mudar url pela sua api
+        "https://6660f71163e6a0189fe80d14.mockapi.io/apiReact/v1/pessoa" //Mudar url pela sua api
       );
       setPessoas(response.data);
     } catch (error) {
@@ -56,12 +57,12 @@ function BuscarUsuario() {
 
       {pessoa ? (
         <div id="dadosPessoa">
-          <h2>Dados da Pessoa</h2>
-          <table className="table">
+          <h2>Dados da Pessoa:</h2>
+          <table className="table custom-table">
             <tbody>
               <tr>
                 <th scope="row">Nome:</th>
-                <td>{pessoa.nome}</td>
+                <td>{pessoa.name}</td>
               </tr>
               <tr>
                 <th scope="row">Email:</th>

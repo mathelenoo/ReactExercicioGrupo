@@ -1,0 +1,29 @@
+body {
+    margin: 0; 
+    height: 100vh; 
+    width: auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  .container{
+    padding-bottom: 30rem;
+  }
+
+  .btn-primary{
+    margin-bottom: 0.5rem;
+  }
+
+  .custom-table{
+    width: 100%;
+  }
+
+  .custom-table tbody tr {
+    width: 100%;
+    margin-bottom: 15px; 
+  }
+
+  .custom-table tbody {
+    width: 100%;
+  }
