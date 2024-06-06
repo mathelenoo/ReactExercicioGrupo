@@ -1,17 +1,15 @@
-import React from 'react'
-// import Formulario from './components/Formulario'
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './routes/AppRouter';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Carros from './components/Carros';
-import BuscarUsuario from './components/Buscar';
 
 
 function App() {
   return (
-    <div>
-    {/* <Formulario/> */}
-    {/* <Carros/> */}
-    <BuscarUsuario/>
-    </div>
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
+
   )
 }
 
